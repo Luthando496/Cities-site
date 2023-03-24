@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import Video from './components/Video'
+import VideoSecond from './components/VideoSecond'
 import {BiCheckCircle,BiPhoneIncoming,BiTime,BiLocationPlus} from 'react-icons/bi'
+import Slider from './components/Slider'
 
 
 
@@ -43,9 +45,10 @@ function App() {
 
       </div>
     </section>
+    {/*  */}
 
-
-    <section className="grid py-[9rem] bg-zinc-200 w-full">
+    {/*  */}
+    <section className=" grid py-[9rem] bg-zinc-200 w-full">
     <div className="w-[90%] mx-auto">
       <h2 className="grid-title text-2xl font-light">CHOOSE YOUR PLACE</h2>
       <h1 className="text-[4rem] uppercase tracking-widest text-amber-700 font-extrabold">Popular <span className='text-darkBlue3'>Tours</span></h1>
@@ -182,8 +185,40 @@ function App() {
     </div>
 
     </section>
-      
+      {/*  */}
+
+      <section className="w-full py-[10rem] bo ">
+        <div className="w-[90%] mx-auto flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4">
+        <div className="flex flex-col space-y-4 items-center">
+          <img src="/src/assets/aircraft.jpg" alt="ss" className='w-[5rem] h-[5rem] rounded-full' />
+          <h2 className='font-bold text-2xl text-cyan-600'>600</h2>
+          <h3 className='font-bold text-xl text-white'>Flight Booking</h3>
+        </div>
+        <div className="flex flex-col space-y-4 items-center mt-11 lg:mt-0">
+          <img src="/src/assets/aircraft.jpg" alt="ss" className='w-[5rem] h-[5rem] rounded-full' />
+          <h2 className='font-bold text-2xl text-cyan-600'>600</h2>
+          <h3 className='font-bold text-xl text-white'>Flight Booking</h3>
+        </div>
+        <div className="flex flex-col space-y-4 items-center mt-11 lg:mt-0">
+          <img src="/src/assets/aircraft.jpg" alt="ss" className='w-[5rem] h-[5rem] rounded-full' />
+          <h2 className='font-bold text-2xl text-cyan-600'>600</h2>
+          <h3 className='font-bold text-xl text-white'>Flight Booking</h3>
+
+        </div>
+        <div className="flex flex-col space-y-4 items-center mt-11 lg:mt-0">
+          <img src="/src/assets/aircraft.jpg" alt="ss" className='w-[5rem] h-[5rem] rounded-full' />
+          <h2 className='font-bold text-2xl text-cyan-600'>600</h2>
+          <h3 className='font-bold text-xl text-white'>Flight Booking</h3>
+        </div>
+
+        </div>
+      </section>
+      {/*  */}
+
+      <Slider />
+      <VideoSecond />
     </>
+    // 
   )
 }
 
