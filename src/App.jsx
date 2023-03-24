@@ -1,14 +1,189 @@
 import { useState } from 'react'
+import Video from './components/Video'
+import {BiCheckCircle,BiPhoneIncoming,BiTime,BiLocationPlus} from 'react-icons/bi'
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="">
-      <h3 className="text-5xl text-sky-500 text-center">HEllo Out There</h3>
+    <>
+    <Video />
+    <section className="hero w-full py-[9rem]">
+      <div className="w-[90%] mx-auto flex flex-col xl:flex-row items-center p-8 gap-7">
+
+      <article className="left">
+      <h3 className="font-light text-xl">THE BEST TRAVEL AGENCY</h3>
+      <h1 className="text-bold py-6 text-4xl  md:text-[4rem] leading-normal">DISCOVER THE WORLD WITH OUR <span className='text-orange-700'>GUIDE</span></h1>
+      <p className="text-md font-light tracking-widest">
+      You can choose any country with good tourism. Agency elementum sesue the aucan vestibulum aliquam justo in sapien rutrum volutpat. Donec in quis the pellentesque velit. Donec id velit ac arcu posuere blane.
+      </p>
+      <p className="mt-4 text-md font-light tracking-widest">Hotel ut nisl quam nestibulum ac quam nec odio elementum ceisue the miss varius natoque penatibus et magnis dis parturient monte.</p>
+      <div className="py-4 pl-6 space-y-4">
+        <div className="info flex items-center">
+          <BiCheckCircle size={50} className='mr-6' fill='rgba(333,33,55,0.7)' />
+          <p className="font-light text-xl">20 Years of Experience</p>
+        </div>
+        <div className="info flex items-center">
+          <BiCheckCircle size={50} className='mr-6' fill='rgba(111,11,666,0.9)' />
+          <p className="font-light text-xl">150+ Tour Destinations</p>
+        </div>
+        <div className="info flex items-center">
+          <BiPhoneIncoming size={50} className='mr-6' fill='rgba(111,11,666,0.9)' />
+          <p className="font-light">150+ Tour Destinations<span className='text-sky-700 font-bold'><br /> 076 705 7533</span></p>
+        </div>
+
+      </div>
+      </article>
+
+      <article className="img ">
+        <img src="/src/assets/spencer-davis-ckotRXopwRM-unsplash.jpg" alt="jdkj" className='w-full rounded-md h-full' />
+      </article>
+
+
+      </div>
+    </section>
+
+
+    <section className="grid py-[9rem] bg-zinc-200 w-full">
+    <div className="w-[90%] mx-auto">
+      <h2 className="grid-title text-2xl font-light">CHOOSE YOUR PLACE</h2>
+      <h1 className="text-[4rem] uppercase tracking-widest text-amber-700 font-extrabold">Popular <span className='text-darkBlue3'>Tours</span></h1>
+
+      <div className="flex flex-col lg:grid lg:grid-cols-5 gap-6 mt-6">
+      {/*  */}
+      <div className="text-white col-span-3 w-full h-[80vh] overflow-hidden relative">
+      <div className="gh w-full h-full">
+      <h2 className="font-light text-2xl tracking-wider  z-50 absolute right-0 top-8 price bg-accentBlue p-2">$2.550</h2>
+
+      <div className="content absolute bottom-0 left-0 h-full flex flex-col justify-end w-full px-8 py-4 hover:ml-4 hover:mb-14 duration-700 ">
+      <h2 className="text-2xl font-light text-">Greece Tour</h2>
+      <div className="w-[30%] h-[1px] my-4 bg-red-200 hover:w-full"></div>
+      <div className="flex items-center space-x-4">
+        <div className="one flex space-x-2 items-center mr-3">
+          <BiTime className='mr-1' size={20} />12 days
+        </div>
+        <div className="one flex space-x-2 items-center mr-3">
+          <BiTime className='mr-1' size={20} />12 days
+        </div>
+        <div className="one flex space-x-2 items-center">
+          <BiLocationPlus className='mr-1' size={20} />Cape Town
+        </div>
+      </div>
+
+      </div>
+      </div>
+      </div>
+      {/*  */}
+      <div className='overflow-hidden relative  w-full h-[80vh] col-span-2'>
+      <div className="hj w-full text-white h-full">
+      <h2 className="font-light text-2xl tracking-wider  z-50 absolute right-0 top-8 price bg-accentBlue p-2">$2.550</h2>
+
+      <div className="content absolute bottom-0 left-0 h-full flex flex-col justify-end w-full px-8 py-4 hover:ml-4 hover:mb-14 duration-700 ">
+      <h2 className="text-2xl font-light text-">Greece Tour</h2>
+      <div className="w-[30%] h-[1px] my-4 bg-red-200 hover:w-full"></div>
+      <div className="flex items-center space-x-4">
+        <div className="one flex space-x-2 items-center mr-3">
+          <BiTime className='mr-1' size={20} />12 days
+        </div>
+        <div className="one flex space-x-2 items-center mr-3">
+          <BiTime className='mr-1' size={20} />12 days
+        </div>
+        <div className="one flex space-x-2 items-center">
+          <BiLocationPlus className='mr-1' size={20} />Cape Town
+        </div>
+      </div>
+
+      </div>
+      
+
+      </div>
+      </div>
+      {/*  */}
+      </div>
+
+      {/*  */}
+
+      <div className="flex flex-col lg:grid lg:grid-cols-12 gap-6 mt-6">
+      {/*  */}
+      <div className="text-white col-span-4 w-full h-[50vh] overflow-hidden relative">
+      <div className="gh w-full h-full">
+      <h2 className="font-light text-lg tracking-wider  z-50 absolute right-0 top-8 price bg-accentBlue p-1">$2.550</h2>
+
+      <div className="content absolute bottom-0 left-0 h-full flex flex-col justify-end w-full px-8 py-4 hover:ml-4 hover:mb-10 duration-700 ">
+      <h2 className="text-md font-light text-">Greece Tour</h2>
+      <div className="w-[30%] h-[1px] my-2 bg-red-200 hover:w-full"></div>
+      <div className="flex items-center space-x-4">
+        <div className="one flex space-x-2 items-center mr-3">
+          <BiTime className='mr-1' size={15} />12 days
+        </div>
+        <div className="one flex space-x-2 items-center mr-3">
+          <BiTime className='mr-1' size={15} />12 days
+        </div>
+        <div className="one flex space-x-2 items-center">
+          <BiLocationPlus className='mr-1' size={15} />Cape Town
+        </div>
+      </div>
+
+      </div>
+      </div>
+      </div>
+      {/*  */}
+      <div className='overflow-hidden relative  w-full h-[50vh] col-span-4'>
+      <div className="hj w-full text-white h-full">
+      <h2 className="font-light text-md tracking-wider  z-50 absolute right-0 top-8 price bg-accentBlue p-2">$2.550</h2>
+
+      <div className="content absolute bottom-0 left-0 h-full flex flex-col justify-end w-full px-8 py-4 hover:ml-4 hover:mb-14 duration-700 ">
+      <h2 className="text-md font-light text-">Greece Tour</h2>
+      <div className="w-[30%] h-[1px] my-2 bg-red-200 hover:w-full"></div>
+      <div className="flex items-center space-x-4">
+        <div className="one flex space-x-2 items-center mr-3">
+          <BiTime className='mr-1' size={15} />12 days
+        </div>
+        <div className="one flex space-x-2 items-center mr-3">
+          <BiTime className='mr-1' size={15} />12 days
+        </div>
+        <div className="one flex space-x-2 items-center">
+          <BiLocationPlus className='mr-1' size={15} />Cape Town
+        </div>
+      </div>
+
+      </div>
+      
+
+      </div>
+      </div>
+      {/*  */}
+      <div className='overflow-hidden relative  w-full h-[50vh] col-span-4'>
+      <div className="hj w-full text-white h-full">
+      <h2 className="font-light text-md tracking-wider  z-50 absolute right-0 top-8 price bg-accentBlue p-2">$2.550</h2>
+
+      <div className="content absolute bottom-0 left-0 h-full flex flex-col justify-end w-full px-8 py-4 hover:ml-4 hover:mb-14 duration-700 ">
+      <h2 className="text-md font-light text-">Greece Tour</h2>
+      <div className="w-[30%] h-[1px] my-2 bg-red-200 hover:w-full"></div>
+      <div className="flex items-center space-x-4">
+        <div className="one flex space-x-2 items-center mr-3">
+          <BiTime className='mr-1' size={15} />12 days
+        </div>
+        <div className="one flex space-x-2 items-center mr-3">
+          <BiTime className='mr-1' size={15} />12 days
+        </div>
+        <div className="one flex space-x-2 items-center">
+          <BiLocationPlus className='mr-1' size={15} />Cape Town
+        </div>
+      </div>
+
+      </div>
+      
+
+      </div>
+      </div>
+      </div>
     </div>
+
+    </section>
+      
+    </>
   )
 }
 
