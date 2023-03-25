@@ -22,7 +22,7 @@ const VideoSecond = () => {
                     <BiLocationPlus className='mr-1' size={20} />Cape Town
                     </div>
                 </div>
-                <button className='video-btn uppercase bg-yellow-300 py-4 px-8 border-none text-2xl text-white hover:bg-lightRed hover:text-darkBlue3 duration-700 ease-in-out hover:rounded-full'>Read More</button>
+                <button className='video-btn uppercase bg-yellow-300 py-4 px-8 border-none text-2xl text-white hover:bg-lightRed hover:text-darkBlue3 duration-300 ease-out hover:rounded-full'>Read More</button>
     
             </div>
             </div>

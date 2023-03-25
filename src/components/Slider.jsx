@@ -14,7 +14,7 @@ const Slider =() => {
     <section className=" grid py-[9rem] bg-zinc-200 w-full">
     <div className="w-[90%] mx-auto">
       <h2 className="grid-title text-cyan-900 text-2xl font-light uppercase">Top Destination</h2>
-      <h1 className="text-[4rem] uppercase tracking-widest text-lightRed font-extrabold">Popular <span className='text-accentBlue'>Destination</span></h1>
+      <h1 className="text-[2rem] md:text-[4rem] uppercase tracking-widest text-lightRed font-extrabold">Popular <span className='text-accentBlue'>Destination</span></h1>
 
       <div className="mt-6">
     <Flickity options={flickityOptions} className='max-w-full overflow-hidden outline-none' >

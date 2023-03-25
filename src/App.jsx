@@ -216,7 +216,65 @@ function App() {
       {/*  */}
 
       <Slider />
+      {/*  */}
       <VideoSecond />
+
+      {/*  */}
+      <section className="py-20 bg-darkBlue2">
+      <div className="w-[90%] mx-auto">
+        <h2 className="font-light text-2xl uppercase text-sky-700 tracking-widest">Travel Blog</h2>
+        <h1 className="text-4xl md:text-[4rem] text-white font-bold my-8"><span className='text-amber-700' >Travel</span> Experience</h1>
+
+        <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+            {/*  */}
+            <div className="card h-[70vh] relative ">
+            <div className="img overflow-hidden w-full h-full">
+              <img src="/src/assets/ryan-searle-uOz71GyDVpo-unsplash.jpg" alt="mmmk" className='w-full h-full hover:scale-150 duration-500' />
+            </div>
+              <div className="absolute bottom-[-2.5rem] left-4 p-4 bg-white z-10 w-[90%]">
+                <h2 className="font-light uppercase">Travel</h2>
+                <p className="text-xl font-bold pt-2 text-sky-600">
+                  Tips To A Flawless Honeymoon
+                </p>
+
+              </div>
+            </div>
+            
+            {/*  */}
+            <div className="card h-[70vh] relative mt-14 md:mt-0">
+            <div className="img overflow-hidden w-full h-full">
+              <img src="/src/assets/valentin-beauvais-yVUQlyRlJSw-unsplash.jpg" alt="mmmk" className='w-full h-full hover:scale-150 duration-500' />
+            </div>
+              <div className="absolute bottom-[-2.5rem] left-4 p-4 bg-white z-10 w-[90%]">
+                <h2 className="font-light uppercase">Tours</h2>
+                <p className="text-xl font-bold pt-2 text-sky-600">
+                  Family Adventure Tours for teen & kids
+                </p>
+
+              </div>
+            </div>
+            {/*  */}
+            <div className="card h-[70vh] relative mt-14 lg:mt-0">
+            <div className="img overflow-hidden w-full h-full">
+              <img src="/src/assets/valentin-beauvais-G0odtUZb7Jk-unsplash.jpg" alt="mmmk" className='w-full h-full hover:scale-150 duration-500' />
+            </div>
+              <div className="absolute bottom-[-2.5rem] left-4 p-4 bg-white z-10 w-[90%]">
+                <h2 className="font-light uppercase">Tours</h2>
+                <p className="text-xl font-bold pt-2 text-sky-600">
+                  Small group tours with flights from Tokyo
+                </p>
+
+              </div>
+            </div>
+            {/*  */}
+
+
+
+        </div>
+
+      </div>
+
+      </section>
     </>
     // 
   )
