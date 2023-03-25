@@ -17,7 +17,7 @@ const Contact = () => {
         </div>
 
         <div className="py-40">
-            <div className="w-[80%] mx-auto grid grid-cols-2 gap-28">
+            <div className="w-[80%] mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-28">
                 {/*  */}
                 <div className="leftie">
                     <h1 className="text-2xl uppercase text-darkBlue3 font-light">Get in touch person</h1>
@@ -36,10 +36,10 @@ const Contact = () => {
                 </div>
                 {/*  */}
                 <div className="rightie space-y-6">
-                    <input type="text" name="" id="" className='p-4 w-full bg-gray-500' placeholder='Name' />
-                    <input type="email" name="" id="" className='p-4 w-full bg-gray-500' placeholder='Email' />
-                    <input type="text" name="" id="" className='p-4 w-full bg-gray-500' placeholder='Subject' />
-                    <textarea name="" id=""  className='bg-gray-300 h-[5rem] w-full'
+                    <input type="text" name="" id="" className='p-4 w-full bg-cyan-900 text-darkBlue2' placeholder='Name' />
+                    <input type="email" name="" id="" className='p-4 w-full bg-cyan-900 text-darkBlue2' placeholder='Email' />
+                    <input type="text" name="" id="" className='p-4 w-full bg-cyan-900 text-darkBlue2' placeholder='Subject' />
+                    <textarea name="" id="" placeholder='Message'  className='bg-cyan-900 text-darkBlue2 p-4 h-[5rem] w-full'
                     ></textarea>
                     <button className='text-white hover:text-white bg-amber-400 w-[40%] hover:bg-amber-900 font-bold py-2 px-6 rounded'>Send Message</button>
                 </div>
