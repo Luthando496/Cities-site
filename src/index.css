@@ -81,3 +81,27 @@
   background-position: center;
   background-attachment: fixed;
 }
+.rev{
+  background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('/src/assets/jon-flobrant-YD1uvthZwg4-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.cto{
+  line-height: 2rem;
+}
+
+
+.details{
+  background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('https://images.pexels.com/photos/6526440/pexels-photo-6526440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+}
+
+.details h1{
+  line-height: 1.7;
+}
