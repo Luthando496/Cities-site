@@ -13,12 +13,12 @@ const Details = () => {
 
     const[data,setData]=useState(questions)
     const [current,setCurr] = useState(null)
-    const id = useParams().id    
+    // const id = useParams().id    
     const data3 = data2
     
     useEffect(()=>{
-        const item = data3.find(item => item.id === id ? id : 3)
-        console.log(id)
+        const item = data3.find(item => item.id === 2)
+        // console.log(id)
         setCurr(item)
         
     },[id,current])
