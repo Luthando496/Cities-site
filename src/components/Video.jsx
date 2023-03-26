@@ -4,7 +4,7 @@ const Video = () => {
   return (
     <div className='w-full h-screen relative'>
     <div className="absolute top-0 left-0 w-full h-full bg-black/80"></div>
-        <video autoPlay loop muted src='/src/assets/city.mp4' className='w-full h-full object-cover' />
+        <video autoPlay loop muted src='/assets/city.mp4' className='w-full h-full object-cover' />
         <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
         <div className="text-center space-y-6">
             <h3 className="text-3xl text-white uppercase font-light">Lets Travel the continent together</h3>

@@ -38,7 +38,7 @@ const Home = () => {
       </article>
 
       <article className="img ">
-        <img src="/src/assets/spencer-davis-ckotRXopwRM-unsplash.jpg" alt="jdkj" className='w-full rounded-md h-full' />
+        <img src="/assets/spencer-davis-ckotRXopwRM-unsplash.jpg" alt="jdkj" className='w-full rounded-md h-full' />
       </article>
 
 
@@ -189,23 +189,23 @@ const Home = () => {
       <section className="w-full py-[10rem] bo ">
         <div className="w-[90%] mx-auto flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col space-y-4 items-center">
-          <img src="/src/assets/aircraft.jpg" alt="ss" className='w-[5rem] h-[5rem] rounded-full' />
+          <img src="/assets/aircraft.jpg" alt="ss" className='w-[5rem] h-[5rem] rounded-full' />
           <h2 className='font-bold text-2xl text-cyan-600'>600</h2>
           <h3 className='font-bold text-xl text-white'>Flight Booking</h3>
         </div>
         <div className="flex flex-col space-y-4 items-center mt-11 lg:mt-0">
-          <img src="/src/assets/aircraft.jpg" alt="ss" className='w-[5rem] h-[5rem] rounded-full' />
+          <img src="/assets/aircraft.jpg" alt="ss" className='w-[5rem] h-[5rem] rounded-full' />
           <h2 className='font-bold text-2xl text-cyan-600'>600</h2>
           <h3 className='font-bold text-xl text-white'>Flight Booking</h3>
         </div>
         <div className="flex flex-col space-y-4 items-center mt-11 lg:mt-0">
-          <img src="/src/assets/aircraft.jpg" alt="ss" className='w-[5rem] h-[5rem] rounded-full' />
+          <img src="/assets/aircraft.jpg" alt="ss" className='w-[5rem] h-[5rem] rounded-full' />
           <h2 className='font-bold text-2xl text-cyan-600'>600</h2>
           <h3 className='font-bold text-xl text-white'>Flight Booking</h3>
 
         </div>
         <div className="flex flex-col space-y-4 items-center mt-11 lg:mt-0">
-          <img src="/src/assets/aircraft.jpg" alt="ss" className='w-[5rem] h-[5rem] rounded-full' />
+          <img src="/assets/aircraft.jpg" alt="ss" className='w-[5rem] h-[5rem] rounded-full' />
           <h2 className='font-bold text-2xl text-cyan-600'>600</h2>
           <h3 className='font-bold text-xl text-white'>Flight Booking</h3>
         </div>
@@ -228,7 +228,7 @@ const Home = () => {
             {/*  */}
             <div className="card h-[70vh] relative ">
             <div className="img overflow-hidden w-full h-full">
-              <img src="/src/assets/ryan-searle-uOz71GyDVpo-unsplash.jpg" alt="mmmk" className='w-full h-full hover:scale-150 duration-500' />
+              <img src="/assets/ryan-searle-uOz71GyDVpo-unsplash.jpg" alt="mmmk" className='w-full h-full hover:scale-150 duration-500' />
             </div>
               <div className="absolute bottom-[-2.5rem] left-4 p-4 bg-white z-10 w-[90%]">
                 <h2 className="font-light uppercase">Travel</h2>
@@ -242,7 +242,7 @@ const Home = () => {
             {/*  */}
             <div className="card h-[70vh] relative mt-14 md:mt-0">
             <div className="img overflow-hidden w-full h-full">
-              <img src="/src/assets/valentin-beauvais-yVUQlyRlJSw-unsplash.jpg" alt="mmmk" className='w-full h-full hover:scale-150 duration-500' />
+              <img src="/assets/valentin-beauvais-yVUQlyRlJSw-unsplash.jpg" alt="mmmk" className='w-full h-full hover:scale-150 duration-500' />
             </div>
               <div className="absolute bottom-[-2.5rem] left-4 p-4 bg-white z-10 w-[90%]">
                 <h2 className="font-light uppercase">Tours</h2>
@@ -255,7 +255,7 @@ const Home = () => {
             {/*  */}
             <div className="card h-[70vh] relative mt-14 lg:mt-0">
             <div className="img overflow-hidden w-full h-full">
-              <img src="/src/assets/valentin-beauvais-G0odtUZb7Jk-unsplash.jpg" alt="mmmk" className='w-full h-full hover:scale-150 duration-500' />
+              <img src="/assets/valentin-beauvais-G0odtUZb7Jk-unsplash.jpg" alt="mmmk" className='w-full h-full hover:scale-150 duration-500' />
             </div>
               <div className="absolute bottom-[-2.5rem] left-4 p-4 bg-white z-10 w-[90%]">
                 <h2 className="font-light uppercase">Tours</h2>
