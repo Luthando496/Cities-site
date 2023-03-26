@@ -1,5 +1,8 @@
 import React,{useState} from 'react'
 import {CiMenuBurger} from 'react-icons/ci'
+import {FaTimes} from 'react-icons/fa'
+import {Link} from 'react-router-dom'
+
 // import
 
 const Navbar = () => {
@@ -12,24 +15,44 @@ const Navbar = () => {
         <img src="/src/assets/logo-white.png" alt="ss" className='w-[5rem] h-[5rem] ' />
       </h1>
 
-      <ul className={`text-white ${isOpen ? 'block absolute top-[5.4rem] translate-x-0 duration-700 ease-in-out left-0 translate w-[80%] z-10 bg-sky-500/80' : 'hidden translate-x-[-44rem] duration-700'} lg:flex w-full lg:justify-evenly lg:items-center uppercase`}>
-        <li className='px-8 py-2'>
+      <ul className='text-white hidden lg:flex w-full lg:justify-evenly lg:items-center uppercase'>
+        <li>
           <h4>HOME</h4>
         </li>
-        <li className='px-8 py-2'>
+        <li>
           <h4>About</h4>
         </li>
-        <li className='px-8 py-2'>
+        <li>
           <h4>Tours</h4>
         </li>
-        <li className='px-8 py-2'>
+        <li>
           <h4>Destination</h4>
         </li>
-        <li className='px-8 py-2'>
+        <li>
           <h4>Gallery</h4>
         </li>
       </ul>
-      <CiMenuBurger onClick={()=> setIsOpen(!isOpen)} size={50} fill='rgba(111,341,33,0.7)' className='self-end duration-700  lg:hidden' />
+      {isOpen ? <CiMenuBurger onClick={()=> setIsOpen(!isOpen)} size={50} fill='rgba(111,341,33,0.7)' className='self-end duration-1000 lg:hidden' /> : <FaTimes onClick={()=> setIsOpen(!isOpen)} size={50} fill='rgba(111,341,33,0.7)' className='self-end duration-1000' /> }
+     <div className={!isOpen ? 'fixed z-30 duration-1000 left-0 h-full top-0 w-[50%] md:w-[30%] bg-black text-white': 'fixed top-0 h-full left-[-100%] duration-1000 z-30'}>
+      <h2 className="text">
+        <img src="/src/assets/logo-white.png" alt="logo" className='w-[5rem]' />
+      </h2>
+
+      <ul className="flex flex-col w-[90%] mx-auto overflow-hidden space-y-5">
+        <Link to='/' className='uppercase text-center border p-2 w-full font-light text-2xl hover:bg-rose-500 duration-700 '>
+          Home
+        </Link>
+        <Link to='/contact' className='uppercase border text-center p-2 w-full font-light text-2xl hover:bg-rose-500 duration-700 '>
+          Contact
+        </Link>
+        <Link to='/gallery' className='border uppercase text-center p-2 w-full font-light text-2xl hover:bg-rose-500 duration-700 '>
+        gallery
+        </Link>
+        <Link className='uppercase text-center p-2 w-full font-light text-2xl hover:bg-rose-500 duration-700 border'>
+          Home
+        </Link>
+      </ul>
+     </div>
       </nav>
     </div>
   )
