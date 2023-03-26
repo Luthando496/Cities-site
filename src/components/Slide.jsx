@@ -3,7 +3,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 
-const Slide = () => {
+const Slide = (props) => {
+
     const responsive = {
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
@@ -42,19 +43,19 @@ const Slide = () => {
         itemClass="carousel-item-padding-40-px"
       >
         <div className='h-full relative'>
-            <img src="/src/assets/tobias-reich-1GgWbP74phY-unsplash.jpg" className='h-full w-full object-cover' alt="background-image" />
+            <img src='https://images.unsplash.com/photo-1597982087634-9884f03198ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=888&q=80' className='h-full w-full object-cover' alt="background-image" />
             <div className="overlay absolute top-0 left-0 w-full h-full bg-black/50"></div>
         </div>
         <div className='h-full'>
-            <img src="/src/assets/patrick-ward-bVovHygDlJI-unsplash.jpg" className='h-full w-full object-cover' alt="background-image" />
+            <img src='https://images.unsplash.com/photo-1597982087634-9884f03198ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=888&q=80' className='h-full w-full object-cover' alt="background-image" />
             <div className="overlay absolute top-0 left-0 w-full h-full bg-black/50"></div>
         </div>
         <div className='h-full'>
-            <img src="/src/assets/tim-johnson-nQtyCDfqsdE-unsplash.jpg" className='h-full w-full object-cover' alt="background-image" />
+            <img src='https://images.unsplash.com/photo-1597982087634-9884f03198ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=888&q=80' className='h-full w-full object-cover' alt="background-image" />
             <div className="overlay absolute top-0 left-0 w-full h-full bg-black/50"></div>
         </div>
         <div className='h-full'>
-            <img src="/src/assets/tim-johnson-g8t03pBlYCs-unsplash.jpg" className='h-full w-full object-cover' alt="background-image" />
+            <img src="https://images.unsplash.com/photo-1597982087634-9884f03198ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=888&q=80" className='h-full w-full object-cover' alt="background-image" />
             <div className="overlay absolute top-0 left-0 w-full h-full bg-black/50"></div>
         </div>
       </Carousel>

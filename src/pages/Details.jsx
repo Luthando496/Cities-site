@@ -1,30 +1,42 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import {BsCheckLg} from 'react-icons/bs'
 import {BiPhoneIncoming} from 'react-icons/bi'
 import { questions } from '../Questions'
 import SingleQuestion from '../components/SingleQuestion'
 import Slide from '../components/Slide'
+import { data2 } from '../data'
+import { useParams } from 'react-router-dom'
+
 
 
 const Details = () => {
 
     const[data,setData]=useState(questions)
-
+    const [current,setCurr] = useState(null)
+    const id = useParams().id    
+    const data3 = data2
+    
+    useEffect(()=>{
+        const item = data3.find(item => item.id === id ? id : 3)
+        console.log(id)
+        setCurr(item)
+        
+    },[id,current])
   return (
     <>
     <Slide />
-        <section className="py-[8rem] w-[90%] mx-auto flex flex-col lg:grid lg:grid-cols-3">
-        <div className=" lg:col-span-2">
+        <section className="py-[8rem] w-[90%] mx-auto flex flex-col gap-4 lg:grid lg:grid-cols-2">
+        <div className=" ">
             <h2 className="text-2xl text-sky-700 uppercase">Travel Agency</h2>
-            <h1 className="text-[4rem] uppercase font-bold text-darkBlue3">Roma,<span className="text-sky-500"> Italy</span></h1>
+            <h1 className="text-[4rem] uppercase font-bold text-darkBlue3">{current && current.country},<span className="text-sky-500"> {current && current.place}</span></h1>
 
             <h2 className="text-3xl font-bold pt-10 text-blue-800">Information</h2>
 
-            <p className="py-8 font-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem aperiam nesciunt possimus repudiandae ducimus laudantium, ratione et aliquam. Dicta, optio consequatur tempore autem ipsa animi consectetur accusamus quia.</p>
+            <p className="py-8 font-light">{current && current.information}</p>
 
-            <h2 className="text-gray-400">5 Days 4 Nights, Group:5 - 10 People, Roma Italy</h2>
+            <h2 className="text-gray-400">5 Days 4 Nights, Group:5 - 10 People, {current && current.country} {current && current.place}</h2>
 
-            <p className="py-8 font-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem aperiam nesciunt possimus repudiandae ducimus laudantium, ratione et aliquam. Dicta, optio consequatur tempore autem ipsa animi consectetur accusamus quia.</p>
+            <p className="py-8 font-light">{current && current.miniInfo}</p>
 
             <div className="grid grid-cols-2 pr-8">
                 {/*  */}
@@ -80,7 +92,7 @@ const Details = () => {
             
         </div>
 
-        <div className="mt-10 lg:mt-0 lg:col-span-1">
+        <div className="mt-10 lg:mt-0 ">
             <div className="card bg-slate-600">
             <div className="card-title bg-sky-700 py-7 px-4">
                 <h2 className="text-2xl text-white font-semibold">Form $900</h2>
@@ -102,14 +114,10 @@ const Details = () => {
                 <h2 className="text-6xl text-sky-700 capitalize">Tour Gallery</h2>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 mt-8 gap-4">
-                    <img src="https://images.pexels.com/photos/4253928/pexels-photo-4253928.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="cape-town-tours" className="w-full h-[50vh] object-cover" />
-                    <img src="https://images.pexels.com/photos/3770287/pexels-photo-3770287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="cape-town-tours" className="w-full h-[50vh] object-cover" />
-                    <img src="https://images.pexels.com/photos/11831654/pexels-photo-11831654.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="cape-town-tours" className="w-full h-[50vh] object-cover" />
-                    <img src="https://images.pexels.com/photos/6790328/pexels-photo-6790328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="cape-town-tours" className="w-full h-[50vh] object-cover" />
-                    <img src="https://images.pexels.com/photos/6624558/pexels-photo-6624558.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load/" alt="cape-town-tours" className="w-full h-[50vh] object-cover" />
-                    <img src="https://images.pexels.com/photos/9324233/pexels-photo-9324233.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="cape-town-tours" className="w-full h-[50vh] object-cover" />
-                    <img src="https://images.pexels.com/photos/3392324/pexels-photo-3392324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="cape-town-tours" className="w-full h-[50vh] object-cover" />
-                    <img src="https://images.pexels.com/photos/9324230/pexels-photo-9324230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="w-full h-[50vh] object-cover" />
+                    {current && current.images.map((item,index) => (
+                    <img src={item.url} key={index} alt="cape-town-tours" className="w-full h-[50vh] object-cover" />
+                        
+                    ))}
                 </div>
                 
         </div>

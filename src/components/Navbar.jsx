@@ -17,21 +17,16 @@ const Navbar = () => {
 
       <ul className='text-white hidden lg:flex w-full lg:justify-evenly lg:items-center uppercase'>
         <li>
-          <h4>HOME</h4>
+          <Link to='/' >HOME</Link>
         </li>
         <li>
-          <h4>About</h4>
+          <Link to='/contact'>Contact</Link>
         </li>
         <li>
-          <h4>Tours</h4>
+          <Link to='/gallery'>Gallery</Link>
         </li>
-        <li>
-          <h4>Destination</h4>
-        </li>
-        <li>
-          <h4>Gallery</h4>
-        </li>
-      </ul>
+        </ul>
+
       {isOpen ? <CiMenuBurger onClick={()=> setIsOpen(!isOpen)} size={50} fill='rgba(111,341,33,0.7)' className='self-end duration-1000 lg:hidden' /> : <FaTimes onClick={()=> setIsOpen(!isOpen)} size={50} fill='rgba(111,341,33,0.7)' className='self-end duration-1000' /> }
      <div className={!isOpen ? 'fixed z-30 duration-1000 left-0 h-full top-0 w-[50%] md:w-[30%] bg-black text-white': 'fixed top-0 h-full left-[-100%] duration-1000 z-30'}>
       <h2 className="text">
